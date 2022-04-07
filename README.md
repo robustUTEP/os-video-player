@@ -66,3 +66,5 @@ Note: You may have ancillary objects and method in order to make you're code eas
 # to install on ubuntu
 $ sudo apt-get install python3-opencv
 
+# to install on MacOS
+$ sudo pip install opencv-python
