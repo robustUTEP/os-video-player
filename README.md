@@ -8,8 +8,18 @@ thread will read frames from a file, a second thread will take those frames
 and convert them to grayscale, and the third thread will display those
 frames. The threads will run concurrently.
 
-In order to run this lab opencv will need to be installed. To install opencv
-use the follwing commands (note that ordering is important):
+In order to run this lab opencv will need to be installed. In April 2024, these commands successfully installed it.  You can cut-and-paste them from README.md, or just run the script install-opencv-0424.sh.
+
+
+    sudo apt-get update
+    sudo apt-get install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio
+    sudo apt-get install ffmpeg 
+    sudo apt-get install python3-numpy
+    sudo apt-get install python3-pip
+    sudo pip install opencv-python
+
+
+These commands worked a few years ago in the arch vm:
 
     sudo zypper -n install python3-devel
     sudo zypper -n install ffmpeg ffmpeg-3
